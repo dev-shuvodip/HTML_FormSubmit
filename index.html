@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <div
+    class="container border shadow-sm bg-transprent rounded d-grid gap-3 p-3 position-absolute top-50 start-50 translate-middle">
+    <label for="studentForm" class="fs-3 fw-normal">Student Form</label>
+    <form id="studentForm">
+      <div class="row mb-3" style="width: auto;">
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10" style="width: 50%;">
+          <input type="text" class="form-control shadow-sm bg-transprent rounded" placeholder="Enter name" id="name"
+            required>
+        </div>
+      </div>
+
+      <div class="row mb-3" style="width: auto;">
+        <label for="address" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-10" style="width: 50%;">
+          <input type="text" class="form-control shadow-sm bg-transprent rounded" placeholder="Enter address"
+            id="address" required>
+        </div>
+      </div>
+
+      <div class="row mb-3" style="width: auto;">
+        <label for="qualification" class="col-sm-2 col-form-label">Qualification</label>
+        <div class="col-sm-10" style="width: 50%;">
+          <input type="text" class="form-control shadow-sm bg-transprent rounded" placeholder="Enter qualifications"
+            id="qualification">
+        </div>
+      </div>
+
+      <div class="row mb-3" style="width: auto;">
+        <label for="age" class="col-sm-2 col-form-label">Age</label>
+        <div class="col-sm-10" style="width: 50%;">
+          <input type="number" class="form-control shadow-sm bg-transprent rounded" placeholder="Enter age" id="age">
+        </div>
+      </div>
+
+      <div class="row mb-3" style="width: auto;">
+        <label class="col-sm-2 col-form-label" for="gender">Gender</label>
+        <div class="col-sm-10" style="width: 50%;">
+          <select class="form-control rounded shadow-sm bg-transprent" id="gender">
+            <option value="default"></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end pe-5">
+        <button type="submit" class="btn btn-primary rounded me-md-2">Submit</button>
+        <button type="reset" class="btn btn-primary rounded">Reset</button>
+      </div>
+      <script src="script.js"></script>
+    </form>
+  </div>
+</body>
+
+</html>
